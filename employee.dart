@@ -35,20 +35,6 @@ abstract class Employee implements Person {
       Accountant? accountant,
       Manager? manager,
       Company? company}) {
-    /*  if (this is Accountant || this is Manager) {
-      if (employee != null) {
-        employee._salary = newSalary;
-      } else {
-        _salary = newSalary;
-      }
-    } else {
-      print('You are not Accountant or Manager in ${company?.name} Company!');
-    } */
-
-    if (employee != null) {
-      employee._salary = newSalary;
-    } else {
-      _salary = newSalary;
-    }
+    employee!._salary = newSalary;
   }
 }
